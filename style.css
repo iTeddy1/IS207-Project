@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}  
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+.logo img {
+    max-width: 120px;
+    height: auto;
+}
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+.nav-icon i {
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400;
+    transition: al .42s ease ;
+}
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: gray;
+}
+section {
+padding: 5% 10%;
+color: white;
+}
+.main-home {
+    width:110%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-image:url(./Banner1.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main-text {
+    justify-content: space-between;
+    padding-left: 150px;
+}
+.main-text h5 {
+    font-size: 19px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.main-text h1 {
+    font-size: 53px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 580;
+    margin: 6px 0 10px;
+}
+.main-btn {
+    display: inline-block;
+    font-size: 16px;
+    color: aliceblue;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid whitesmoke;
+    padding: 12px 25px;
+    transition: all .42s ease;
+}
+.main-btn:hover {
+    background-color: aliceblue;
+    color: black;
+}
+.main-btn i {
+    vertical-align: middle;
+}
+.bar {
+    font-size: 15px;
+    padding: 4px; 
+    border-radius: 5px;
+    border: solid 2px rgb(207, 200, 200);
+    height: 35px;
+    background-color: whitesmoke;
+    float: right;
+    top:610px;
+    right: 160px;
+    position: absolute;
+}
+.search-box {
+    position: absolute;
+    top: 274px;
+    right: 180px;
+    width: 5px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.op{
+color: #007B55;
+ font-size: 20px;
+ font-family: Public Sans;
+ font-weight: 600;
+ line-height: 20px;
+ word-wrap: break-word;
+ padding-left: 60px;
+}
+header.sticky {
+    background: #fff;
+    padding: 5px 10%;
+    box-shadow: 0px 0px 10px rgb(0 0 0  / 10);
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.row img {
+width: 85%;
+height: auto;
+transition: all .40s;
+}
+
+.row {
+    position: relative; 
+}
+
+.product-text h5 {
+    position: absolute; 
+    top: 45px; 
+    left: 58px;
+    color: #fff;
+    font-size: 12px;    
+    font-weight: 700;
+    font-family: Poppins;
+    text-transform: uppercase;
+    background-color: #00B9DA;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.product-text-s h5 {
+    position: absolute; 
+    top: 45px; 
+    left: 58px; 
+    color: #fff;
+    font-size: 12px;    
+    font-weight: 700;
+    font-family: Poppins;
+    text-transform: uppercase;
+    background-color: #FF5630;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon {
+    position: absolute;
+    font-size: 20px;
+    top: 45px; 
+    right: 125px;
+}
+.heart-background {
+    width: 30px; /* Điều chỉnh kích thước ô tròn */
+    height: 30px; /* Điều chỉnh kích thước ô tròn */
+    background-color: #fff; /* Màu nền cho ô tròn */
+    border-radius: 50%; /* Tạo hình tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heart-background i {
+    color: black; /* Màu icon trái tim */
+    font-size: 20px; /* Điều chỉnh kích thước icon trái tim */
+}
+.heart-background i:hover {
+    color: #FF5630;
+}
+.eye-icon {
+    position: absolute;
+    font-size: 20px;
+    top: 80px; 
+    right: 125px;
+}
+.eye-background {
+    width: 30px; /* Điều chỉnh kích thước ô tròn */
+    height: 30px; /* Điều chỉnh kích thước ô tròn */
+    background-color: #fff; /* Màu nền cho ô tròn */
+    border-radius: 50%; /* Tạo hình tròn */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eye-background i {
+    color: black; /* Màu icon trái tim */
+    font-size: 20px; /* Điều chỉnh kích thước icon trái tim */
+}
+.eye-background i:hover {
+    color: grey;
+}
+
+
+
+
+
+
+
