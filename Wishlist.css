@@ -1,0 +1,121 @@
+.text{
+    font-size: 20px;
+     font-family: Public Sans;
+     font-weight: 600;
+     line-height: 20px;
+     word-wrap: break-word;
+     padding-left: 60px;
+}
+    .bt{
+        position: relative;
+        left: 815px;
+    }
+    .button{
+        font-family: Public Sans;
+        position: relative;
+        font-weight: 600;
+        background: transparent;
+        padding: 16px 48px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.50);  
+    }
+    .greenbutton{
+        position: relative;
+        left: 50px;
+        top: 10px;
+    }
+    header.sticky {
+        background: #fff;
+        padding: 5px 10%;
+        box-shadow: 0px 0px 10px rgb(0 0 0  / 10);
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(260px, 1fr));
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+    
+    .row img {
+    width: 85%;
+    height: auto;
+    transition: all .40s;
+    }
+    
+    .row {
+        position: relative; 
+    }
+    
+    .product-text h5 {
+        position: absolute; 
+        top: 45px; 
+        left: 58px;
+        color: #fff;
+        font-size: 12px;    
+        font-weight: 700;
+        font-family: Poppins;
+        text-transform: uppercase;
+        background-color: #00B9DA;
+        padding: 3px 10px;
+        border-radius: 2px;
+    }
+    .product-text-s h5 {
+        position: absolute; 
+        top: 45px; 
+        left: 58px; 
+        color: #fff;
+        font-size: 12px;    
+        font-weight: 700;
+        font-family: Poppins;
+        text-transform: uppercase;
+        background-color: #FF5630;
+        padding: 3px 10px;
+        border-radius: 2px;
+    }
+    .heart-icon {
+        position: absolute;
+        font-size: 20px;
+        top: 45px; 
+        right: 125px;
+    }
+    .heart-background {
+        width: 30px; /* Điều chỉnh kích thước ô tròn */
+        height: 30px; /* Điều chỉnh kích thước ô tròn */
+        background-color: #fff; /* Màu nền cho ô tròn */
+        border-radius: 50%; /* Tạo hình tròn */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .heart-background i {
+        color: black; /* Màu icon trái tim */
+        font-size: 20px; /* Điều chỉnh kích thước icon trái tim */
+    }
+    .heart-background i:hover {
+        color: #FF5630;
+    }
+    .eye-icon {
+        position: absolute;
+        font-size: 20px;
+        top: 80px; 
+        right: 125px;
+    }
+    .eye-background {
+        width: 30px; /* Điều chỉnh kích thước ô tròn */
+        height: 30px; /* Điều chỉnh kích thước ô tròn */
+        background-color: #fff; /* Màu nền cho ô tròn */
+        border-radius: 50%; /* Tạo hình tròn */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .eye-background i {
+        color: black; /* Màu icon trái tim */
+        font-size: 20px; /* Điều chỉnh kích thước icon trái tim */
+    }
+    .eye-background i:hover {
+        color: grey;
+    }
+    
