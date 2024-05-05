@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<link href="./output.css" rel="stylesheet" />
+
+<body>
+  <!-- <div style="width: 100%; height: 100%; justify-content: center; align-items: center; gap: 703px; display: inline-flex">
+        <div style="text-align: center; color: #212B36; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 26px; word-wrap: break-word">Wishlist (4)</div>
+        <div style="padding-left: 48px; padding-right: 48px; padding-top: 16px; padding-bottom: 16px; border-radius: 4px; border: 1px rgba(0, 0, 0, 0.50) solid; justify-content: center; align-items: center; gap: 10px; display: inline-flex">
+            <div style="color: #212B36; font-size: 16px; font-family: Poppins; font-weight: 500; line-height: 24px; word-wrap: break-word">Move All To Bag</div>
+        </div> -->
+  <div class="w-full h-full flex justify-center items-center gap-x-[703px]">
+    <div class="text-center text-[#212B36] text-[20px] font-[Poppins] font-normal leading-[26px] break-words">Wishlist
+      (4)</div>
+    <div
+      class="pl-[48px] pr-[48px] pt-[16px] pb-[16px] rounded-[4px] border border-[rgba(0,0,0,.5)] flex justify-center items-center gap-x-[10px]">
+      <div class="text-[#212B36] text-[16px] font-[Poppins] font-medium leading-[24px] break-words">Move All To Bag
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <div class="flex flex-wrap">
+    <div
+      class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+      <div class="relative">
+        <div
+          class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-info rounded justify-center items-center gap-2.5 inline-flex">
+          <div class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]">
+            New
+          </div>
+        </div>
+        <div
+          class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+              </svg>
+            </div>
+          </div>
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+
+              </svg>
+            </div>
+          </div>
+        </div>
+
+
+
+        <img src="https://readymadeui.com/cardImg.webp" class="rounded-lg w-[260px] h-[250px]" />
+      </div>
+
+      <div class="pl-3 w-[260px] h-[75px] text-left">
+        <h3 class="text-lg font-semibold">Nike Air Force 1’07</h3>
+
+        <div>
+          <div class="flex pt-8 justify-between items-center">
+
+
+            <!-- Price  -->
+            <div class="flex gap-1.5">
+              <span
+                class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal">$190</span>
+              <span class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal">$150</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+      <div class="relative">
+        <div
+          class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex">
+          <div class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]">
+            Sale
+          </div>
+        </div>
+        <div
+          class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+              </svg>
+            </div>
+          </div>
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+        <img src="https://readymadeui.com/cardImg.webp" class="rounded-lg w-[260px] h-[250px]" />
+      </div>
+
+      <div class="pl-3 w-[260px] h-[75px] text-left">
+        <h3 class="text-lg font-semibold">Nike Air Force 1’07</h3>
+
+        <div>
+          <div class="flex pt-8 justify-between items-center">
+
+
+            <!-- Price  -->
+            <div class="flex gap-1.5">
+              <span
+                class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal">$190</span>
+              <span class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal">$150</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+      <div class="relative">
+        <div
+          class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M170.5 51.6L151.5 80h145l-19-28.4c-1.5-2.2-4-3.6-6.7-3.6H177.1c-2.7 0-5.2 1.3-6.7 3.6zm147-26.6L354.2 80H368h48 8c13.3 0 24 10.7 24 24s-10.7 24-24 24h-8V432c0 44.2-35.8 80-80 80H112c-44.2 0-80-35.8-80-80V128H24c-13.3 0-24-10.7-24-24S10.7 80 24 80h8H80 93.8l36.7-55.1C140.9 9.4 158.4 0 177.1 0h93.7c18.7 0 36.2 9.4 46.6 24.9zM80 128V432c0 17.7 14.3 32 32 32H336c17.7 0 32-14.3 32-32V128H80zm80 64V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16zm80 0V400c0 8.8-7.2 16-16 16s-16-7.2-16-16V192c0-8.8 7.2-16 16-16s16 7.2 16 16z" />
+              </svg>
+            </div>
+          </div>
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+
+              </svg>
+            </div>
+          </div>
+        </div>
+
+
+        <img src="https://readymadeui.com/cardImg.webp" class="rounded-lg w-[260px] h-[250px]">
+      </div>
+
+      <div class="pl-3 w-[260px] h-[75px] text-left">
+        <h3 class="text-lg font-semibold">Nike Air Force 1’07</h3>
+
+        <div>
+          <div class="flex pt-8 justify-between items-center">
+
+            <!-- Price  -->
+            <div class="flex gap-1.5">
+              <span
+                class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal">$190</span>
+              <span class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal">$150</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class ></div> -->
+  <div
+    style="width: 100%; height: 100%; justify-content: flex-start; align-items: center; gap: 80px; display: inline-flex; margin-top:80px; margin-bottom: 20px;">
+    <div style="width: 20px; height: 40px; position: relative; left: 60px">
+      <img src="./Category Rectangle.svg">
+    </div>
+    <div
+      style="text-align: center; color: #212B36; font-size: 20px; font-family: Poppins; font-weight: 400; line-height: 26px; word-wrap: break-word">
+      Just For You</div>
+  </div>
+  
+  <div class="flex flex-wrap">
+    <div
+      class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+      <div class="relative">
+        <div
+          class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex">
+          <div class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]">
+            Sale
+          </div>
+        </div>
+        <div
+          class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <img src="https://readymadeui.com/cardImg.webp" class="rounded-lg w-[260px] h-[250px]" />
+      </div>
+
+      <div class="pl-3 w-[260px] h-[75px] text-left">
+        <h3 class="text-lg font-semibold">Nike Air Force 1’07</h3>
+
+        <div>
+          <div class="flex pt-8 justify-between items-center">
+            <!-- Color Pallette  -->
+            <span class="flex">
+              <div class="w-8 h-4 relative">
+                <div class="w-4 h-4 left-[-0px] top-0 absolute bg-zinc-300 rounded-full"></div>
+                <div class="w-4 h-4 left-[8px] top-0 absolute bg-red-600 rounded-full"></div>
+                <div class="w-4 h-4 left-[16px] top-0 absolute bg-blue-700 rounded-full"></div>
+              </div>
+            </span>
+
+            <!-- Price  -->
+            <div class="flex gap-1.5">
+              <span
+                class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal">$190</span>
+              <span class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal">$150</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+      <div class="relative">
+        <div
+          class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex">
+          <div class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]">
+            Sale
+          </div>
+        </div>
+        <div
+          class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <img src="https://readymadeui.com/cardImg.webp" class="rounded-lg w-[260px] h-[250px]" />
+      </div>
+
+      <div class="pl-3 w-[260px] h-[75px] text-left">
+        <h3 class="text-lg font-semibold">Nike Air Force 1’07</h3>
+
+        <div>
+          <div class="flex pt-8 justify-between items-center">
+            <!-- Color Pallette  -->
+            <span class="flex">
+              <div class="w-8 h-4 relative">
+                <div class="w-4 h-4 left-[-0px] top-0 absolute bg-zinc-300 rounded-full"></div>
+                <div class="w-4 h-4 left-[8px] top-0 absolute bg-red-600 rounded-full"></div>
+                <div class="w-4 h-4 left-[16px] top-0 absolute bg-blue-700 rounded-full"></div>
+              </div>
+            </span>
+
+            <!-- Price  -->
+            <div class="flex gap-1.5">
+              <span
+                class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal">$190</span>
+              <span class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal">$150</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4">
+      <div class="relative">
+        <div
+          class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex">
+          <div class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]">
+            Sale
+          </div>
+        </div>
+        <div
+          class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="w-[34px] h-[34px] relative">
+            <div class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"></div>
+            <div class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-eye" width="24" height="24"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                <path d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <img src="https://readymadeui.com/cardImg.webp" class="rounded-lg w-[260px] h-[250px]" />
+      </div>
+
+      <div class="pl-3 w-[260px] h-[75px] text-left">
+        <h3 class="text-lg font-semibold">Nike Air Force 1’07</h3>
+
+        <div>
+          <div class="flex pt-8 justify-between items-center">
+            <!-- Color Pallette  -->
+            <span class="flex">
+              <div class="w-8 h-4 relative">
+                <div class="w-4 h-4 left-[-0px] top-0 absolute bg-zinc-300 rounded-full"></div>
+                <div class="w-4 h-4 left-[8px] top-0 absolute bg-red-600 rounded-full"></div>
+                <div class="w-4 h-4 left-[16px] top-0 absolute bg-blue-700 rounded-full"></div>
+              </div>
+            </span>
+
+            <!-- Price  -->
+            <div class="flex gap-1.5">
+              <span
+                class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal">$190</span>
+              <span class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal">$150</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+
+</html>
