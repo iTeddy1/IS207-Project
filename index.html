@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nike - Just Do It</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="m-0 p-0 box-border font-sans list-none text-decoration-none scroll-smooth">
+    <aside class="w-[280px] border"></aside>
+    <main>
+
+      <header class="flex items-center justify-between ml-20 w-full px-10 py-5 bg-white">
+        <a href="#" class="logo">
+            <img src="./Logo.png" alt="" class="max-w-[120px] h-auto" />
+        </a>      
+        <div class="flex items-center mr-40">
+          <div class="">
+            <div class="inline-flex mr-5 items-center h-12 gap-2 border border-solid border-[#E0E4E8] rounded-md p-1">
+                <input type="text" placeholder="What are you looking for?" class="w-[180px] text-[#212B36] pl-5 text-xs bg-transparent focus:outline-none placeholder-font-poppins" />
+                <span class="flex items-center justify-center text-lg text-black pr-2">
+                    <i class='bx bx-search'></i>
+                </span>
+            </div>
+        </div>
+            <a href="#" class="nav-icon mr-4">
+                <i class="bx bx-heart text-gray-700 text-2xl transition duration-400 transform hover:scale-110"></i>
+            </a>
+            <a href="#" class="nav-icon mr-4">
+                <i class="bx bx-cart text-gray-700 text-2xl transition duration-400 transform hover:scale-110"></i>
+            </a>
+            <a href="#" class="nav-icon">
+                <i class="bx bx-user text-gray-700 text-2xl transition duration-400 transform hover:scale-110"></i>
+            </a>
+        </div>
+    </header>    
+    <div class="w-full h-0.5 border-solid opacity-30 bg-black mb-20"></div>
+
+    <div id="carousel-example" class="relative w-full">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg sm:h-64 xl:h-80 2xl:h-96">
+          <!-- Item 1 -->
+          <div id="carousel-item-1" class="absolute left-0 w-full h-full duration-700 ease-in-out opacity-100">
+              <img src="./sld1.png" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 max-w-max rounded-xl" alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div id="carousel-item-2" class="absolute left-0 w-full h-full duration-700 ease-in-out opacity-0">
+              <img src="./sld2.png" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl" alt="...">
+          </div>
+          <!-- Item 3 -->
+          <div id="carousel-item-3" class="absolute left-0 w-full h-full duration-700 ease-in-out opacity-0">
+              <img src="./sld3.png" class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl" alt="...">
+          </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute bottom-5 left-1/2 z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse">
+          <button id="carousel-indicator-1" type="button" class="h-3 w-3 rounded-full" aria-current="true" aria-label="Slide 1"></button>
+          <button id="carousel-indicator-2" type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 2"></button>
+          <button id="carousel-indicator-3" type="button" class="h-3 w-3 rounded-full" aria-current="false" aria-label="Slide 3"></button>
+      </div>
+      <!-- Slider controls -->
+      <button id="data-carousel-prev" type="button" class="group absolute left-44 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
+              <svg class="h-4 w-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="hidden">Previous</span>
+          </span>
+      </button>
+      <button id="data-carousel-next" type="button" class="group absolute right-44 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none">
+          <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70">
+              <svg class="h-4 w-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="hidden">Next</span>
+          </span>
+      </button>
+  </div>
+        
+        <div class="sticky float-right right-32 mt-10">
+          <div class="">
+              <div class="inline-flex items-center h-10 gap-2 border border-solid border-[#E0E4E8] rounded-md p-1">
+                  <input type="text" placeholder="Search" class="w-[100px] text-[#212B36] bg-transparent focus:outline-none pl-5" />
+                  <span class="flex items-center justify-center pr-2 text-lg text-black">
+                      <i class='bx bx-search'></i>
+                  </span>
+              </div>
+          </div>
+      </div>
+               
+        <!--Products-->
+        <div class="flex items-center ml-28 mt-44 space-x-5">
+          <div class="w-6 ml h-14 bg-[#007B55] "></div>
+          <div class="text-green-600 text-2xl font-semibold font-public-sans break-words">
+              Our Products
+          </div>
+      </div>        
+
+      <div class="flex justify-between mr-32 mt-3">
+        <div class="text-right text-black text-lg font-inter font-bold leading-6 break-words ml-auto mr-16">
+            Filter:
+        </div>    
+        
+        <div class="text-center text-black text-lg font-inter font-bold leading-6 break-words">
+            Sort by: <i class='bx bx-chevron-down ml-1'></i>
+        </div>
+    </div>
+    
+      
+      <div class="ml-16 mt-none explore font-bold text-black pl-12 mb-10 text-4xl font-public-sans leading-12 tracking-wide">
+          Explore Our Products
+      </div>         
+
+        <div class="flex">
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]"
+                >
+                  Sale
+                </div>
+              </div>
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic1.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">Nike Dunk Low Retro</h3>
+
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-cyan-400 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[8px] top-0 absolute bg-orange-500 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[16px] top-0 absolute bg-stone-100 rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal"
+                    >
+                      $190
+                    </span>
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $150
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-cyan-400 rounded justify-center items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]"
+                >
+                  New
+                </div>
+              </div>
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic2.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">Nike Air Max 1 '87</h3>
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-amber-900 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[8px] top-0 absolute bg-yellow-500 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[16px] top-0 absolute bg-stone-100 rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $150
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic3.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">Black and Blue Gaze</h3>
+
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-sky-400 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[8px] top-0 absolute bg-zinc-900 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[16px] top-0 absolute bg-orange-500 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[24px] top-0 absolute bg-stone-100 rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $180
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]"
+                >
+                  Sale
+                </div>
+              </div>
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic4.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">Nike Air Force 1 '07</h3>
+
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-stone-100 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[8px] top-0 absolute bg-[#b7cac6] rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal"
+                    >
+                      $115
+                    </span>
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $110
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-red-500 rounded justify-center items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]"
+                >
+                  Sale
+                </div>
+              </div>
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic5.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">Air Jordan 1 Low</h3>
+
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-[#007939] rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[8px] top-0 absolute bg-[#e4ce9f] rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-400 text-base font-medium font-['Public Sans'] line-through leading-normal"
+                    >
+                      $115
+                    </span>
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $110
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic6.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">Air Jordan 1 High OG</h3>
+
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-[#efeae7] rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[8px] top-0 absolute bg-zinc-900 rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[16px] top-0 absolute bg-[#db963b] rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $140
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex">
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-cyan-400 rounded justify-center items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]"
+                >
+                  New
+                </div>
+              </div>
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic7.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">LeBron Witness 8</h3>
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-[#f73707] rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[8px] top-0 absolute bg-[#e2106c] rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[16px] top-0 absolute bg-[#bfd7b7] rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[24px] top-0 absolute bg-[#222534] rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $110
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] left-[12px] absolute w-[53px] h-[26px] px-3 py-1 bg-cyan-400 rounded justify-center items-center gap-2.5 inline-flex"
+              >
+                <div
+                  class="text-neutral-50 text-xs font-bold font-['Poppins'] uppercase leading-[18px]"
+                >
+                  New
+                </div>
+              </div>
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic8.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">LeBron NXXT Gen</h3>
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-[#008568] rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[8px] top-0 absolute bg-[#d7af68] rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[16px] top-0 absolute bg-[#7b0404] rounded-full"
+                      ></div>
+                      <div
+                        class="w-4 h-4 left-[24px] top-0 absolute bg-[#c6c1b9] rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $110
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white shadow-[0_8px_12px_-6px_rgba(0,0,0,0.2)] border p-2 w-[280px] h-[370px] max-w-sm rounded-lg font-[sans-serif] overflow-hidden mx-auto mt-4"
+          >
+            <div class="relative">
+              <div
+                class="top-[7px] right-[6px] absolute w-[34px] h-[76px] flex-col justify-start items-start gap-2 inline-flex"
+              >
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div class="w-6 h-6 left-[5px] top-[5px] absolute">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-heart"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+                <div class="w-[34px] h-[34px] relative">
+                  <div
+                    class="w-[34px] h-[34px] left-0 top-0 absolute bg-white rounded-full"
+                  ></div>
+                  <div
+                    class="w-6 h-6 left-[5px] top-[5px] absolute justify-center items-center inline-flex"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-eye"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="2"
+                      stroke="#000000"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                      <path
+                        d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+
+              <img
+                style="block-size: fit-content"
+                src="./pic9.png"
+                class="rounded-lg w-[260px] h-[250px]"
+              />
+            </div>
+
+            <div class="pl-3 w-[260px] h-[75px] text-left">
+              <h3 class="text-lg font-semibold">Nike Calm</h3>
+
+              <div>
+                <div class="flex pt-8 justify-between items-center">
+                  <!-- Color Pallette  -->
+                  <span class="flex">
+                    <div class="w-8 h-4 relative">
+                      <div
+                        class="w-4 h-4 left-[-0px] top-0 absolute bg-[#c7b098] rounded-full"
+                      ></div>
+                    </div>
+                  </span>
+
+                  <!-- Price  -->
+                  <div class="flex gap-1.5">
+                    <span
+                      class="text-gray-800 text-base font-medium font-['Public Sans'] leading-normal"
+                    >
+                      $50
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </main>
+
+    <div class="flex items-center justify-center mt-14">
+      <div class="w-8 h-8 bg-[#00AC55] rounded-full flex items-center justify-center">
+          <i class="bx bx-left-arrow-alt text-white"></i>
+      </div>
+      <div class="text-black text-lg font-inter font-semibold leading-6 ml-5 mr-5">
+          1
+      </div>
+      <div class="w-8 h-8 bg-[#00AC55] rounded-full flex items-center justify-center">
+        <i class="bx bx-right-arrow-alt text-white"></i>
+    </div>
+  </div>  
+  
+    <footer class="h-[310px] bg-[#005249] mt-14">
+        <div class="mx-auto w-full max-w-screen-xl">
+            <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-5">
+              <div>
+                  <h2 class="mb-6 text-lg font-[700] text-[#212B36] uppercase dark:text-white">Frenzy</h2>
+                  <ul class="text-white dark:text-white-400 font-medium">
+                      <li class="mb-4">
+                          <a href="#" class=" hover:underline">Subscribe</a>
+                      </li>
+                      <li class="mb-4">
+                          <p>Get 10% off your first order</p>
+                      </li>
+                      <li class="relative flex">
+                            <input type="text" placeholder="Enter your email" class="border-2 border-solid border-[#00AC55] rounded-md h-10 pl-3 py-3 focus:outline-none focus:border-[#00AC55] bg-[#005249] text-white flex-1">
+                            <i class='bx bx-send absolute top-1/2 right-3 transform -translate-y-1/2 text-[#00AC55]'></i>                                                
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Support</h2>
+                  <ul class="text-white dark:text-white-400 ">
+                      <li class="mb-4">
+                          <p>69 Tan Lap, Di An,<br> Binh Duong, Viet Nam</p>
+                      </li>
+                      <li class="mb-4">
+                          <p>frenzy@gmail.com</p>
+                      </li>
+                      <li class="mb-4">
+                          <p>+88015-88888-9999</p>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Account</h2>
+                  <ul class="text-white dark:text-white-400">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">My Account</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Login / Register</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Cart</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                  <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Quicklink</h2>
+                  <ul class="text-white dark:text-white-400">
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Privacy Policy</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">Terms Of Use</a>
+                      </li>
+                      <li class="mb-4">
+                          <a href="#" class="hover:underline">FAQ</a>
+                      </li>
+                  </ul>
+              </div>
+              <div>
+                <h2 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Contact</h2>
+                <div class="px-4 py-6 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+                    <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+                        <a href="#" class="text-[#212B36] hover:text-gray-900 dark:hover:text-white">
+                              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                                    <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                                </svg>
+                              <span class="sr-only">Facebook page</span>
+                          </a>
+                          <a href="#" class="text-[#212B36] hover:text-gray-900 dark:hover:text-white">
+                              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                                <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                            </svg>
+                              <span class="sr-only">Twitter page</span>
+                          </a>
+                          <a href="#" class="text-[#212B36] hover:text-gray-900 dark:hover:text-white">
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 15 15">
+                                <path d="M7.5 5C6.11929 5 5 6.11929 5 7.5C5 8.88071 6.11929 10 7.5 10C8.88071 10 10 8.88071 10 7.5C10 6.11929 8.88071 5 7.5 5Z M4.5 0C2.01472 0 0 2.01472 0 4.5V10.5C0 12.9853 2.01472 15 4.5 15H10.5C12.9853 15 15 12.9853 15 10.5V4.5C15 2.01472 12.9853 0 10.5 0H4.5ZM4 7.5C4 5.567 5.567 4 7.5 4C9.433 4 11 5.567 11 7.5C11 9.433 9.433 11 7.5 11C5.567 11 4 9.433 4 7.5ZM11 4H12V3H11V4Z" fill="#212B36"/>                            
+                            </svg>
+                            <span class="sr-only">Instagram page</span>
+                        </a>
+                          <a href="#" class="text-[#212B36] hover:text-gray-900 dark:hover:text-white">
+                              <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#212B36" viewBox="0 -0.5 25 25">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="m5.706 7.798v16.202h-5.395v-16.202zm.343-5.002c.001.029.002.063.002.098 0 .749-.318 1.423-.826 1.895l-.002.001c-.545.498-1.274.803-2.075.803-.049 0-.099-.001-.148-.003h.007-.033c-.041.002-.089.003-.137.003-.784 0-1.496-.306-2.025-.804l.001.001c-.504-.488-.816-1.17-.816-1.925 0-.024 0-.048.001-.073v.004c-.001-.021-.001-.045-.001-.069 0-.762.324-1.448.841-1.929l.002-.001c.544-.495 1.271-.799 2.068-.799.046 0 .091.001.137.003h-.006c.043-.002.092-.003.143-.003.785 0 1.5.303 2.034.798l-.002-.002c.515.497.835 1.193.835 1.964v.042-.002zm19.062 11.92v9.284h-5.378v-8.665c.005-.079.007-.171.007-.263 0-.896-.249-1.733-.682-2.447l.012.021c-.427-.596-1.117-.979-1.896-.979-.06 0-.12.002-.18.007h.008c-.027-.001-.058-.002-.089-.002-.62 0-1.19.213-1.641.57l.006-.004c-.453.367-.808.836-1.032 1.375l-.008.023c-.116.355-.182.763-.182 1.187 0 .048.001.096.003.144v-.007 9.042h-5.378q.033-6.523.033-10.578t-.016-4.839l-.016-.785h5.378v2.354h-.033c.214-.345.435-.644.678-.924l-.008.009c.281-.309.583-.588.908-.838l.016-.012c.404-.311.878-.555 1.392-.704l.03-.007c.538-.161 1.157-.254 1.797-.254h.079-.004c.071-.003.154-.005.237-.005 1.681 0 3.195.714 4.256 1.856l.003.004q1.702 1.856 1.702 5.436z"/>
+                              </svg>
+                              <span class="sr-only">Linkedin</span>
+                          </a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+    </footer>
+  </body>
+  <script src="path/to/your/script.js"></script>
+</html>
