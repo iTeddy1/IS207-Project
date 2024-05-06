@@ -7,89 +7,88 @@
     <link
       href="https://fonts.googleapis.com/css?family=Public Sans"
       rel="stylesheet"
-    />  
+    />
     <link href="./output.css" rel="stylesheet" />
-
   </head>
-  <body class="w-auto h-[1424px] font-sans bg-gray-100 m-0 p-0 box-border md:bg-black">
-    <aside class="bg-black w-[280px] float-left block h-[356px] max-md:hidden">sidebar</aside>
-    <main>
-      <header class="bg-black w-full h-[120px] block">Frienzy</header>
-      <div class="flex flex-col">
-        <div class="relative inline-flex float-left mt-[102px] ml-[24px]">
-          <div style="color: #919eab">Home /&nbsp;</div>
-          <div>Contact</div>
-        </div>
-        <div class="flex flex-col items-center mt-[80px]">
-          <h2
-            class="text-center text-dark leading-[54px] text-[40px] font-bold break-words"
-          >
-            Let’s talk about your problem
-          </h2>
-          <p
-            class="text-center text-text-normal text-[20px] leading-[54px] font-semibold break-words"
-          >
-            drop us a line through the form and we’ll get back to you
-          </p>
-          <table class="w-[830px] mt-[39px]">
-            <tr >
-              <td class="flex-inline justify-start" rowspan="2">
-                <input
-                  type="text"
-                  class="w-[352px] border border-divider indent-[22px] h-[47px] mb-[42px] text-active-dark text-[20px] font-semibold leading-[54px]"
-                  placeholder="First name*"
-                  id=""
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td class="flex justify-end">
-                <input
-                  type="text"
-                  class="w-[352px]  border border-divider indent-[22px] h-[47px] mb-[42px] text-active-dark text-[20px] font-semibold leading-[54px]"
-                  placeholder="Last name*"
-                  id="text-right"
-                  required
-                />
-              </td>
-            </tr>
-
-            <tr>
-              <td colspan="2">
-                <input
-                  type="email"
-                  class="w-full border border-divider indent-[22px] h-[47px] mb-[42px] text-active-dark text-[20px] font-semibold leading-[54px]"
-                  placeholder="Email address *"
-                  id=""
-                  required
-                />
-              </td>
-            </tr>
-            <tr>
-              <td colspan="2">
-                <textarea
-                  class="indent-[22px] border border-divider w-full h-[124px] flex-shrink-0 text-active-dark font-semibold leading-[54px] text-[20px] resize-none"
-                  placeholder="Please tell us  your problem ?*"
-                  id=""
-                  cols="30"
-                  rows="10"
-                ></textarea>
-              </td>
-            </tr>
-          </table>
-          <div class="text-center mt-[49px]">
-            <button
-              class="text-white border-0 rounded-[10px] w-[125px] bg-primary font-bold text-center py-[15px] px-[30px] text-[24px]"
-              type="submit"
+  <body>
+    <div class="flex">
+      <aside class="w-0 hidden lg:block lg:w-[280px] h-[1000px] border"></aside>
+      <main class="container mx-auto">
+        <header class="h-[120px] border"></header>
+        <div class="flex flex-col">
+          <div class="inline-flex mt-[102px] ml-[24px]">
+            <div style="color: #919eab">Home /&nbsp;</div>
+            <div>Contact</div>
+          </div>
+          <div class="flex flex-col items-center mt-[80px]">
+            <h2
+              class="text-center text-dark leading-[54px] text-[40px] font-bold break-words"
             >
-              Send
-            </button>
+              Let’s talk about your problem
+            </h2>
+            <p
+              class="text-center text-text-normal text-[20px] leading-[54px] font-semibold break-words"
+            >
+              drop us a line through the form and we’ll get back to you
+            </p>
+            <table class=" mt-[39px]">
+              <tr>
+                <td class="flex-inline justify-start" rowspan="2">
+                  <input
+                    type="text"
+                    class="w-[352px] border border-divider indent-[22px] h-[47px] mb-[42px] text-active-dark text-[20px] font-semibold leading-[54px]"
+                    placeholder="First name*"
+                    id=""
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td class="flex justify-end">
+                  <input
+                    type="text"
+                    class="w-[352px] border border-divider indent-[22px] h-[47px] mb-[42px] text-active-dark text-[20px] font-semibold leading-[54px]"
+                    placeholder="Last name*"
+                    id="text-right"
+                    required
+                  />
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="2">
+                  <input
+                    type="email"
+                    class="w-full border border-divider indent-[22px] h-[47px] mb-[42px] text-active-dark text-[20px] font-semibold leading-[54px]"
+                    placeholder="Email address *"
+                    id=""
+                    required
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <textarea
+                    class="indent-[22px] border border-divider w-full h-[124px] flex-shrink-0 text-active-dark font-semibold leading-[54px] text-[20px] resize-none"
+                    placeholder="Please tell us  your problem ?*"
+                    id=""
+                    cols="30"
+                    rows="10"
+                  ></textarea>
+                </td>
+              </tr>
+            </table>
+            <div class="text-center mt-[49px]">
+              <button
+                class="text-white border-0 rounded-[10px] w-[125px] bg-primary font-bold text-center py-[15px] px-[30px] text-[24px]"
+                type="submit"
+              >
+                Send
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </main>
-
-    <script src="script.js"></script>
+      </main>
+    </div>
   </body>
 </html>

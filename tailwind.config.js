@@ -1,8 +1,14 @@
 /** @type {import('tailwindcss').Config} */
+
 export default {
   content: ["./*.html"],
   theme: {
     extend: {
+      borderRadius: {
+        DEFAULT: "10px",
+        'full': "9999px",
+        'small': '5px'
+      },
       colors: {
         primary: {
           lighter: "#C8FBCD",
@@ -71,4 +77,3 @@ export default {
   },
   plugins: [],
 };
-
